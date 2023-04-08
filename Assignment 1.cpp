@@ -6,7 +6,10 @@ int main(){
     int n, i,j,k, x;
 
 for( i = 0; i<=9; i++){
+
+//This program prints a given pattern as output
     for(x = 0; x<=i; x++){
+        //To make sure that 9 isn't printed twice
         if(x==9){
                 break;
             }
