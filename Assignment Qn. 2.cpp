@@ -7,7 +7,7 @@ int main(){
  cout<<"This is an encrypter, Please input a 4 digit number: ";
  int data, last_d;
  cin>>data;
- int nums[4];
+ int nums[4];//
 
  for( int i=3; i>=0; i--){
     last_d = data%10;
