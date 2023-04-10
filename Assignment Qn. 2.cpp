@@ -21,11 +21,11 @@ switch(choice){
 //The following loop pushes each digit to the array
     for( int i=3; i>=0; i--){
     last_d = data%10;
-    data /= 10;
     nums[i] = last_d;
+    data /= 10;
     }
 
-
+//the following loop updates each array value
     for( int i=0; i<=3; i++){
     nums[i] = (nums[i] + 7)%10;
     }
@@ -39,6 +39,7 @@ switch(choice){
      replacer = nums[3];
      nums[3] = nums[1];
      nums[1] = replacer;
+
     cout<<"The encrypted data is ";
 
     //prints each value in array
@@ -64,12 +65,12 @@ case 2:
         value = third * 1000 + fourth * 100 + first * 10 + second;
         decrypted_data = &value;
 
-    cout << "Decrypted number: " << *decrypted_data<<endl;
+    cout << "Decrypted data: " << *decrypted_data<<endl;
          break;
     }
 
     default:
-        cout<<" Invalid choice"; }
+        cout<<"Invalid input! "; }
 
 
 return 0;

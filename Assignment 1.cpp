@@ -2,10 +2,12 @@
 
 using namespace std;
 
-//trial comment
+
 
 int main(){
     int n, i,j,k, x, m;
+
+
 
 cout<<"Please input number of your liking ";
 cin>>m;
