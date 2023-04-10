@@ -5,19 +5,22 @@ using namespace std;
 //trial comment
 
 int main(){
-    int n, i,j,k, x;
+    int n, i,j,k, x, m;
 
-for( i = 0; i<=9; i++){
+cout<<"Please input number of your liking ";
+cin>>m;
+
+for( i = 0; i<=m; i++){
     for(x = 0; x<=i; x++){
-        if(x==9){
+        if(x==m){
                 break;
             }
         cout<<x;
     }
-    for(j=i+1; j<9; j++){
+    for(j=i+1; j<m; j++){
         cout<<" ";
     }
-    for(k =9-i; k>0; k--){
+    for(k =m-i; k>0; k--){
         cout<<" ";
     }
     for( n = i; n>=0; n--){
@@ -26,14 +29,14 @@ for( i = 0; i<=9; i++){
     }
     cout<<endl;
 }
-for( i = 8; i>=0; i--){
+for( i = m-1; i>=0; i--){
     for(x = 0; x<=i; x++){
         cout<<x;
     }
-    for(j=9-i; j>0; j--){
+    for(j=m-i; j>0; j--){
         cout<<" ";
     }
-    for(k=9-i; k>1; k--){
+    for(k=m-i; k>1; k--){
         cout<<" ";
     }
     for( n = i; n>=0; n--){
