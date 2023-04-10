@@ -1,27 +1,42 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
 
 int main(){
-    int n, i,j,k, x;
+    int n;
+cout<< "Enter a positive integer greater than or equal to one: ";
+cin>>n;
 
-for( i = 65; i<=72; i++){
-
-    for(x = 72; x>=i; x--){
-        cout<<char(x);
-    }/*
-    for(j=i+1; j<9; j++){
-        cout<<" ";
-    }
-    for(k =9-i; k>0; k--){
-        cout<<" ";
-    }
-    for( n = i; n>=0; n--){
-
-        cout<<n;
-    }*/
-    cout<<endl;
+if(n<1){
+    cout<< "Invalid input, Nothing to print.";
 }
+else {
+    for(int i=n; i>=1; i--){
+        for(int j= n-i; j>=1; j--){
+            cout<< " ";
+        }
+        for(int j=i; j>=1; j--){
+            cout<< char(64+j);
+        }
+        for(int j=2; j<=i; j++){
+            cout<< char(64+j);
+        }
+        cout<<endl;
+        }
+        for(int i=2; i<=n; i++){
+            for(int j=n-i; j>=1; j--){
+                cout<< " ";
+            }
+            for(int j=i; j>=1; j--){
+            cout<< char(64+j);
+        }
+          for(int j=2; j<=i; j++){
+            cout<< char(64+j);
+        }
+         cout<<endl;
+        }
+
+}
+
 
 
 
